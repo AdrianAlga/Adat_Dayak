@@ -1,0 +1,31 @@
+/* font */
+h1 {
+  font-size: 65px;
+}
+
+/* Navbar */
+
+#navbar2 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #navbar1 {
+    display: none;
+  }
+  #navbar2 {
+    display: contents;
+  }
+  #home {
+    height: 100vh;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+/* Lebar Navbar*/
+@media (max-width: 768px) {
+  #offcanvasNavbar {
+    width: 75%;
+  }
+}
