@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tarian</title>
+    <title>+Tarian</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
 
     <!-- Css -->
-    <link rel="stylesheet" href="css/tarian.css" />
+    <link rel="stylesheet" href="css/addTarian.css" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
@@ -128,82 +128,59 @@
       </div>
     </div>
 
-    <!-- produk -->
-    <section id="headerProduk">
-      <div class="container-fluid card shadow">
-        <div class="row p-3">
-          <div class="col-md-12">
-            <h3>Tarian</h3>
-            <p>menambah, mengedit, atau menghapus Tarian</p>
+    <section id="header-tambahProduk">
+      <div class="container-fluid card shadow-lg">
+        <div class="row mt-3">
+          <div class="col-2">
+            <a href="tarian.html"
+              ><button type="button" class="btn btn-primary"><i class="bi bi-arrow-left-circle"></i></button
+            ></a>
           </div>
-          <div class="col-md-4">
-            <a href="addTarian.html"><button type="button" class="btn btn-primary">+ Tarian</button></a>
+          <div class="col-12 text-center">
+            <h3>Tarian</h3>
+            <p>Ubah/Edit Baju Adat pada colom dibawah</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- alerts -->
-    <div id="liveAlertPlaceholder"></div>
-    <!-- End Alerts -->
-
-    <section class="produk">
-      <div class="container-fluid card shadow my-3">
-        <div class="row">
-          <div class="col-md-12 p-4">
-            <div class="table-responsive">
-              <table class="table table-bordered text-center">
-                <thead>
-                  <tr>
-                    <th class="col-md-0">No.</th>
-                    <th class="col-md-8">Nama Tarian</th>
-                    <th class="col-md-4">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>redmo note 10 pro</td>
-                    <td>
-                      <a href="#"><span class="badge text-bg-info" id="liveAlertBtn">Informasi</span></a>
-                      <a href="editTarian.html"><span class="badge text-bg-warning px-4">Edit</span></a>
-                      <a href="#"><span class="badge text-bg-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</span></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>poco f4</td>
-                    <td>
-                      <a href="informasiTarian.html"><span class="badge text-bg-info">Informasi</span></a>
-                      <a href="editTarian.html"><span class="badge text-bg-warning px-4">Edit</span></a>
-                      <a href="#"><span class="badge text-bg-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</span></a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Hapus</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">Apakah anda ingin menghapusnya?</div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
-                      <button type="button" class="btn btn-primary">Ya</button>
+    <section id="editProduk">
+      <div class="container-fluid">
+        <div class="row my-4 justify-content-center">
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <div class="login-box">
+                <form>
+                  <h4 class="mb-4 text-center">Tarian</h4>
+                  <div class="user-box">
+                    <input type="text" name="" required="" />
+                    <label class="text-black">Nama Tarian <span class="text-danger fw-bold">*</span></label>
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Masukkan foto Tarian <span class="text-danger fw-bold">*</span></label>
+                    <input class="form-control" type="file" id="formFile" required />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Informasi <span class="text-danger fw-bold">*</span></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                  </div>
+                  <div class="row text-center my-4">
+                    <div class="col-md-12">
+                      <div class="login-box">
+                        <button href="guru.html" class="card">
+                          Tambah
+                          <span></span>
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <script src="/js/style.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>

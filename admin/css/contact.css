@@ -1,0 +1,48 @@
+/* font */
+h1 {
+    font-size: 65px;
+  }
+  
+  /* Tinggi Layer & Navbar */
+  #home {
+    height: 100vh;
+    text-align: justify;
+  }
+  
+  #navbar2 {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    #navbar1 {
+      display: none;
+    }
+    #navbar2 {
+      display: contents;
+    }
+    #home {
+      height: 100vh;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+  }
+  
+  /* Lebar Navbar*/
+  @media (max-width: 768px) {
+    #offcanvasNavbar {
+      width: 75%;
+    }
+  }
+ /* table Menyamping */
+.table th:nth-child(2) {
+  white-space: nowrap;
+}
+.table td:nth-child(3) {
+  white-space: nowrap;
+}
+.table td:nth-child(4) {
+  white-space: nowrap;
+}
+  
+  
+  
