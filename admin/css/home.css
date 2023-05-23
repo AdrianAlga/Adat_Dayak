@@ -1,12 +1,30 @@
 /* font */
 h1 {
-  font-size: 65px;
+  font-size: 45px;
 }
 
 /* Tinggi Layer & Navbar */
-#home {
+#home{
   height: 100vh;
+}
+
+.baground1 {
+  height: 100vh;  
   text-align: justify;
+  background-image: url(/image/yellow-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.baground2{
+  background-image: url(/image/image.png);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position:right top;
+  background-size: 550px;
+}
+.baground2 .tinggi{
+  height: 64%;
 }
 
 #navbar2 {
@@ -34,9 +52,5 @@ h1 {
   }
 }
 
-/* Spasi Pargraf */
-p:first-letter {
-  margin-left: 2.9em;
-}
 
 
